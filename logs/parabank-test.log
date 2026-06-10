@@ -1,0 +1,541 @@
+2026-06-10 15:37:08.486 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 1920 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 15:37:08.493 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 15:37:08.495 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 15:37:12.091 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 15:37:12.946 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 5.241 seconds (process running for 13.647)
+2026-06-10 15:37:13.883 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 15:37:13.884 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 15:37:17.979 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 15:37:17.982 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 15:37:18.625 [main] INFO  c.p.a.stepdefinitions.WireMockSteps - KYC stub set up for customer: john
+2026-06-10 15:37:18.704 [main] INFO  c.p.a.stepdefinitions.WireMockSteps - KYC service called. Status: 200
+2026-06-10 16:19:12.784 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 19148 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:19:12.795 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:19:12.796 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:19:14.995 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:19:15.731 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.851 seconds (process running for 6.428)
+2026-06-10 16:19:16.897 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:19:16.897 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:19:16.897 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:16.898 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:17.723 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: No such host is known (parabank.parasoft.com)
+2026-06-10 16:19:17.723 [TestNG-tests-1] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: parabank.parasoft.com
+2026-06-10 16:19:17.723 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-10 16:19:17.724 [TestNG-tests-1] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-10 16:19:17.902 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:19:17.903 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:19:17.906 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:17.984 [TestNG-tests-2] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: "Fetch account details with valid authentication" | Attempts: 1 | Status: Failed
+2026-06-10 16:19:18.003 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:19:18.004 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:18.029 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: parabank.parasoft.com
+2026-06-10 16:19:18.029 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-10 16:19:18.032 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:18.084 [TestNG-tests-2] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: "Fetch account details with valid authentication" | Attempts: 2 | Status: Failed
+2026-06-10 16:19:18.101 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:19:18.103 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:18.126 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: parabank.parasoft.com
+2026-06-10 16:19:18.126 [TestNG-tests-2] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-10 16:19:18.132 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:33.650 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:19:33.750 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:19:33.750 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:19:33.750 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:19:33.765 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:19:36.723 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:19:37.001 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:19:37.157 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:19:38.235 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:19:38.263 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:19:38.476 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:19:38.497 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:19:38.498 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:19:39.257 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:19:39.259 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:19:39.261 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:19:39.261 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:19:40.129 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:19:40.204 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:19:40.204 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:19:40.204 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:19:40.214 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:19:41.931 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:19:42.097 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:19:42.319 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:19:43.161 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:19:43.192 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:19:43.195 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:19:43.250 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: The username and password could not be verified.
+2026-06-10 16:19:43.254 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:19:43.423 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:19:43.451 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:19:43.451 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:19:44.459 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:19:44.504 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:19:44.504 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:19:44.504 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:19:44.508 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:19:46.040 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:19:46.224 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:19:46.256 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:19:46.256 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:19:47.126 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:19:47.168 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:19:47.168 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:19:47.168 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:19:47.170 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:19:49.113 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:19:49.113 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:19:49.264 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:23:47.774 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 18320 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:23:47.775 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:23:47.776 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:23:49.861 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:23:50.521 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.309 seconds (process running for 5.645)
+2026-06-10 16:23:51.378 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:23:51.378 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:23:51.379 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:23:51.379 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:23:54.175 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:23:54.175 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:23:54.180 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:23:54.180 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:23:54.274 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:23:54.274 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:23:54.749 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:23:54.749 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:23:54.752 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:23:54.752 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:23:54.779 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:23:54.779 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:23:55.231 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:23:55.232 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:23:55.241 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:23:55.248 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:23:55.249 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:23:55.252 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:40:47.756 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 3064 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:40:47.757 [TestNG-tests-1] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:40:47.758 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:40:49.872 [TestNG-tests-1] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:40:50.668 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.496 seconds (process running for 5.621)
+2026-06-10 16:40:51.502 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:40:51.502 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:40:51.502 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:40:51.502 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:40:54.107 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:40:54.107 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:40:54.110 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:40:54.110 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:40:54.204 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:40:54.204 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:40:54.208 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:40:54.674 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:40:54.675 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:40:54.687 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:40:55.186 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:40:55.186 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:40:55.198 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:40:56.610 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:40:56.666 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:40:56.666 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:40:56.668 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:40:56.678 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:40:58.833 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:40:59.070 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:40:59.246 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:41:00.767 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:41:00.777 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:41:00.994 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:41:01.021 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:41:01.021 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:41:02.185 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:41:02.252 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:41:02.252 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:41:02.253 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:41:02.256 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:41:04.005 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:41:04.239 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:41:04.463 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:41:05.076 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:41:05.146 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:41:05.146 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:41:05.217 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: The username and password could not be verified.
+2026-06-10 16:41:05.217 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:41:05.428 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:41:05.443 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:41:05.443 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:41:06.322 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:41:06.364 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:41:06.364 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:41:06.364 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:41:06.371 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:41:08.163 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:41:08.363 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:41:08.421 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:41:08.422 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:41:09.420 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:41:09.470 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:41:09.472 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:41:09.472 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:41:09.476 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:41:11.276 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:41:11.276 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:41:11.441 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:45:07.475 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 8328 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:45:07.476 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:45:07.477 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:45:09.947 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:45:10.779 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 4.002 seconds (process running for 6.798)
+2026-06-10 16:45:11.712 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:45:11.712 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:45:11.712 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:11.712 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:14.170 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:14.171 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:14.175 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:45:14.175 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:45:14.274 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:14.274 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:14.682 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:14.682 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:45:14.693 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:45:14.700 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:14.701 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:45:14.702 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:45:15.141 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:45:15.143 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:45:15.158 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:45:15.159 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:45:15.159 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:45:15.164 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:45:41.993 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 18284 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:45:41.995 [TestNG-tests-1] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:45:41.997 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:45:44.063 [TestNG-tests-1] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:45:44.777 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.346 seconds (process running for 5.789)
+2026-06-10 16:45:45.807 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:45:45.807 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:45:45.807 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:45.808 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:45:47.562 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:47.562 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:45:47.568 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:45:47.568 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:45:47.701 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:47.701 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:47.702 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:45:47.702 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:45:50.222 [TestNG-tests-2] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:45:50.222 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:45:50.294 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:45:50.294 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-2
+2026-06-10 16:45:50.296 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:45:50.339 [TestNG-tests-2] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:45:50.377 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:45:50.377 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:45:50.377 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:45:50.444 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:45:52.166 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:45:52.248 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:45:52.445 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:45:52.445 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:45:52.669 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:45:52.669 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:45:53.771 [TestNG-tests-2] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:45:53.774 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:45:53.791 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:45:53.793 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:45:54.093 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:45:54.099 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-2
+2026-06-10 16:45:54.143 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:54.143 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:45:54.143 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:54.143 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:45:55.582 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:45:55.631 [TestNG-tests-2] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:45:55.682 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:45:55.684 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:45:55.689 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:45:55.700 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:45:55.848 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:45:55.848 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-2
+2026-06-10 16:45:55.848 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:45:55.865 [TestNG-tests-2] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:45:57.305 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:45:57.358 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:45:57.491 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:45:57.516 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:45:57.655 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:45:57.677 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:45:57.797 [TestNG-tests-2] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:45:58.199 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:45:58.286 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:45:58.288 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:45:58.344 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: The username and password could not be verified.
+2026-06-10 16:45:58.344 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:45:58.409 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:45:58.409 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:45:58.493 [TestNG-tests-2] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: The username and password could not be verified.
+2026-06-10 16:45:58.493 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:45:58.624 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:45:58.660 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:58.661 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:45:58.861 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-2
+2026-06-10 16:45:58.887 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:45:58.888 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:46:00.329 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:46:00.466 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:46:00.468 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:46:00.468 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:46:00.470 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:46:00.741 [TestNG-tests-2] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:46:00.831 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:46:00.831 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-2
+2026-06-10 16:46:00.831 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:46:00.842 [TestNG-tests-2] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:46:02.056 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:46:02.322 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:46:02.365 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:46:02.365 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:46:02.420 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:46:02.806 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-2
+2026-06-10 16:46:02.834 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:46:02.834 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:46:03.628 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:46:03.732 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:46:03.733 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:46:03.733 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:46:03.746 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:46:04.614 [TestNG-tests-2] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:46:04.709 [TestNG-tests-2] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:46:04.709 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-2
+2026-06-10 16:46:04.709 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:46:04.730 [TestNG-tests-2] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:46:05.425 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:46:05.425 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:46:05.614 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:46:06.419 [TestNG-tests-2] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:46:06.422 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:46:06.591 [TestNG-tests-2] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-2
+2026-06-10 16:48:16.346 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 13044 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:48:16.348 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:48:16.349 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:48:18.377 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:48:19.064 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.227 seconds (process running for 5.732)
+2026-06-10 16:48:19.901 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:48:19.901 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:48:19.901 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:48:19.902 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:48:22.409 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:48:22.409 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:48:22.412 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:48:22.412 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:48:22.527 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:48:22.528 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:48:22.530 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:48:22.987 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:48:22.988 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:48:22.998 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:48:23.400 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:48:23.401 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:48:23.410 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:48:24.195 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:48:24.275 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:48:24.277 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:48:24.277 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:48:24.341 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:48:26.145 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:48:26.456 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:48:26.657 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:48:27.832 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:48:27.839 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:48:28.038 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:48:28.060 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:48:28.060 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:48:29.010 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:48:29.063 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:48:29.063 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:48:29.065 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:48:29.070 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:48:30.845 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:48:30.960 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:48:31.060 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:48:31.760 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:48:31.799 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:48:31.800 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:48:31.856 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: An internal error has occurred and has been logged.
+2026-06-10 16:48:31.873 [TestNG-tests-1] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-10 16:48:34.043 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 139199 bytes
+2026-06-10 16:48:34.045 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:48:34.300 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:48:34.313 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario
+2026-06-10 16:48:34.340 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:48:34.341 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:48:35.325 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:48:35.368 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:48:35.368 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:48:35.368 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:48:35.375 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:48:36.994 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:48:37.168 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:48:37.194 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:48:37.195 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:48:38.241 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:48:38.302 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:48:38.302 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:48:38.302 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:48:38.307 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:48:39.896 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:48:39.904 [TestNG-tests-1] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Intentionally fail to verify screenshot capture
+2026-06-10 16:48:42.089 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 278680 bytes
+2026-06-10 16:48:42.089 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:48:42.424 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:48:42.430 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario
+2026-06-10 16:57:51.620 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 8476 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 16:57:51.621 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 16:57:51.622 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 16:57:53.726 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - RestAssured base URL configured: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:57:53.729 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 16:57:54.377 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.243 seconds (process running for 5.513)
+2026-06-10 16:57:55.266 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:57:55.266 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 16:57:55.267 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:57:55.268 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:57:57.409 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:57:57.409 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:57:57.411 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:57:57.411 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 16:57:57.492 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:57:57.492 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:57:57.496 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 16:57:58.081 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 16:57:58.081 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 16:57:58.095 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 16:57:58.614 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 16:57:58.615 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 16:57:58.628 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 16:57:59.347 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:57:59.541 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:57:59.541 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:57:59.543 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:57:59.560 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:58:01.621 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 16:58:01.921 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 16:58:02.165 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:58:03.246 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 16:58:03.259 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:58:03.453 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:58:03.477 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:58:03.477 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:58:04.491 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:58:04.540 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:58:04.542 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:58:04.542 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:58:04.544 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:58:06.027 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 16:58:06.184 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 16:58:06.329 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 16:58:06.906 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 16:58:06.973 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 16:58:06.973 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 16:58:07.037 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: An internal error has occurred and has been logged.
+2026-06-10 16:58:07.052 [TestNG-tests-1] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-10 16:58:09.187 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 139199 bytes
+2026-06-10 16:58:09.189 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:58:09.370 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:58:09.376 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario
+2026-06-10 16:58:09.394 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:58:09.394 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:58:10.336 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:58:10.394 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:58:10.394 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:58:10.394 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:58:10.396 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:58:12.045 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:58:12.226 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:58:12.255 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 16:58:12.255 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 16:58:13.233 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 16:58:13.277 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 16:58:13.277 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 16:58:13.277 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 16:58:13.282 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 16:58:15.077 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 16:58:15.079 [TestNG-tests-1] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Intentionally fail to verify screenshot capture
+2026-06-10 16:58:17.248 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 278680 bytes
+2026-06-10 16:58:17.248 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 16:58:17.517 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 16:58:17.526 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario
+2026-06-10 18:37:29.957 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 10084 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-10 18:37:29.972 [TestNG-tests-2] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 18:37:29.973 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 18:37:32.222 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - RestAssured base URL configured: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 18:37:32.224 [TestNG-tests-2] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 18:37:32.931 [TestNG-tests-2] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.792 seconds (process running for 6.27)
+2026-06-10 18:37:34.069 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 18:37:34.069 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 18:37:34.070 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 18:37:34.070 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 18:37:36.682 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 18:37:36.682 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 18:37:36.685 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 18:37:36.685 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 18:37:36.761 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 18:37:36.761 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 18:37:36.763 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 18:37:37.168 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 18:37:37.168 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 18:37:37.176 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 18:37:37.682 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 18:37:37.683 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 18:37:37.688 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 18:37:44.085 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 18:37:44.190 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 18:37:44.190 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 18:37:44.190 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 18:37:44.206 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 18:37:46.111 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-10 18:37:46.303 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-10 18:37:46.507 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 18:37:47.978 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-10 18:37:47.989 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 18:37:48.210 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 18:37:48.235 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 18:37:48.235 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 18:37:49.186 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 18:37:49.236 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 18:37:49.236 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 18:37:49.236 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 18:37:49.241 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 18:37:50.855 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-10 18:37:50.986 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-10 18:37:51.094 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-10 18:37:51.564 [TestNG-tests-1] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-10 18:37:51.689 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-10 18:37:51.689 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-10 18:37:51.760 [TestNG-tests-1] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: The username and password could not be verified.
+2026-06-10 18:37:51.760 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 18:37:51.979 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 18:37:51.998 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 18:37:51.998 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 18:37:53.052 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 18:37:53.117 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 18:37:53.118 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 18:37:53.118 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 18:37:53.127 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 18:37:54.747 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 18:37:54.899 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 18:37:54.915 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-10 18:37:54.916 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-10 18:37:55.753 [TestNG-tests-1] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 149, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 149
+2026-06-10 18:37:55.803 [TestNG-tests-1] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-10 18:37:55.804 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: TestNG-tests-1
+2026-06-10 18:37:55.804 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-10 18:37:55.809 [TestNG-tests-1] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-10 18:37:57.442 [TestNG-tests-1] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-10 18:37:57.448 [TestNG-tests-1] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Intentionally fail to verify screenshot capture
+2026-06-10 18:37:59.639 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 278680 bytes
+2026-06-10 18:37:59.639 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-10 18:37:59.962 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
+2026-06-10 18:37:59.977 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario

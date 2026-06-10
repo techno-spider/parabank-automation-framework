@@ -1,0 +1,795 @@
+2026-06-08 17:20:11.838 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 14432 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 17:20:11.841 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 17:20:11.843 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 17:20:12.978 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 17:20:13.914 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.667 seconds (process running for 5.331)
+2026-06-08 17:20:14.787 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 17:20:14.787 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 17:20:17.468 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 17:20:17.472 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 17:20:17.550 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 17:20:17.550 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 17:20:22.198 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 17:20:22.240 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 17:20:22.240 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 17:20:22.240 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 17:20:22.253 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 17:20:24.831 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 17:20:24.958 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 17:20:25.115 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 17:20:26.223 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 17:20:26.241 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 17:20:26.470 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 17:20:26.518 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 17:20:26.518 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 17:20:27.478 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 17:20:27.514 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 17:20:27.516 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 17:20:27.516 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 17:20:27.516 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 17:20:28.974 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 17:20:29.091 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 17:20:29.180 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 17:20:29.290 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 17:20:30.040 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: true
+2026-06-08 17:20:30.040 [main] DEBUG c.p.automation.ui.pages.LoginPage - Getting text from: Error message
+2026-06-08 17:20:30.080 [main] DEBUG c.p.automation.ui.pages.LoginPage - Text retrieved: An internal error has occurred and has been logged.
+2026-06-08 17:20:30.089 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 17:20:30.274 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 139240 bytes
+2026-06-08 17:20:30.274 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 17:20:30.420 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 17:20:30.448 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 17:20:30.448 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 17:20:31.172 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 17:20:31.206 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 17:20:31.206 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 17:20:31.206 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 17:20:31.210 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 17:20:32.627 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 17:20:32.792 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 17:20:32.840 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 17:20:32.840 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 17:20:33.570 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 17:20:33.599 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 17:20:33.599 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 17:20:33.599 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 17:20:33.604 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 17:20:35.093 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 17:20:35.106 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 17:20:35.247 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:21:12.882 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 18704 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:21:12.993 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:21:12.994 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:21:14.105 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestSpecification' defined in class path resource [com/parabank/automation/config/RestAssuredConfig.class]: Failed to instantiate [io.restassured.specification.RequestSpecification]: Factory method 'requestSpecification' threw exception with message: 'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+2026-06-08 18:21:14.473 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08 18:21:14.488 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.parabank.automation.config.RestAssuredConfig.requestSpecification(RestAssuredConfig.java:25)
+
+The following method did not exist:
+
+    'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+
+The calling method's class, com.parabank.automation.config.RestAssuredConfig, was loaded from the following location:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/RestAssuredConfig.class
+
+The called method's class, com.parabank.automation.config.ParabankProperties, is available from the following locations:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/ParabankProperties.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.parabank.automation.config.ParabankProperties: file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes com.parabank.automation.config.RestAssuredConfig and com.parabank.automation.config.ParabankProperties
+
+2026-06-08 18:24:57.680 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 19892 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:24:57.681 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:24:57.681 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:24:58.718 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestSpecification' defined in class path resource [com/parabank/automation/config/RestAssuredConfig.class]: Failed to instantiate [io.restassured.specification.RequestSpecification]: Factory method 'requestSpecification' threw exception with message: 'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+2026-06-08 18:24:58.858 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08 18:24:58.872 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.parabank.automation.config.RestAssuredConfig.requestSpecification(RestAssuredConfig.java:25)
+
+The following method did not exist:
+
+    'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+
+The calling method's class, com.parabank.automation.config.RestAssuredConfig, was loaded from the following location:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/RestAssuredConfig.class
+
+The called method's class, com.parabank.automation.config.ParabankProperties, is available from the following locations:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/ParabankProperties.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.parabank.automation.config.ParabankProperties: file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes com.parabank.automation.config.RestAssuredConfig and com.parabank.automation.config.ParabankProperties
+
+2026-06-08 18:26:48.313 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 16440 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:26:48.313 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:26:48.315 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:26:49.286 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestSpecification' defined in class path resource [com/parabank/automation/config/RestAssuredConfig.class]: Failed to instantiate [io.restassured.specification.RequestSpecification]: Factory method 'requestSpecification' threw exception with message: 'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+2026-06-08 18:26:49.450 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08 18:26:49.475 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.parabank.automation.config.RestAssuredConfig.requestSpecification(RestAssuredConfig.java:25)
+
+The following method did not exist:
+
+    'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+
+The calling method's class, com.parabank.automation.config.RestAssuredConfig, was loaded from the following location:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/RestAssuredConfig.class
+
+The called method's class, com.parabank.automation.config.ParabankProperties, is available from the following locations:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/ParabankProperties.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.parabank.automation.config.ParabankProperties: file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes com.parabank.automation.config.RestAssuredConfig and com.parabank.automation.config.ParabankProperties
+
+2026-06-08 18:27:01.106 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 18448 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:27:01.110 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:27:01.110 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:27:02.067 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestSpecification' defined in class path resource [com/parabank/automation/config/RestAssuredConfig.class]: Failed to instantiate [io.restassured.specification.RequestSpecification]: Factory method 'requestSpecification' threw exception with message: 'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+2026-06-08 18:27:02.296 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08 18:27:02.313 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    com.parabank.automation.config.RestAssuredConfig.requestSpecification(RestAssuredConfig.java:25)
+
+The following method did not exist:
+
+    'com.parabank.automation.config.ParabankProperties$Api com.parabank.automation.config.ParabankProperties.getApi()'
+
+The calling method's class, com.parabank.automation.config.RestAssuredConfig, was loaded from the following location:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/RestAssuredConfig.class
+
+The called method's class, com.parabank.automation.config.ParabankProperties, is available from the following locations:
+
+    file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/com/parabank/automation/config/ParabankProperties.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    com.parabank.automation.config.ParabankProperties: file:/E:/MUNTESH/Automation/parabank-test-framework/target/classes/
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes com.parabank.automation.config.RestAssuredConfig and com.parabank.automation.config.ParabankProperties
+
+2026-06-08 18:36:06.960 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 11764 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:36:07.056 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:36:07.058 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:36:08.314 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 18:36:09.364 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.084 seconds (process running for 4.536)
+2026-06-08 18:36:10.113 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 18:36:10.113 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 18:36:12.135 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:36:12.139 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:36:12.143 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:36:12.143 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:36:16.209 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:36:16.250 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:36:16.250 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:36:16.250 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:36:16.257 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:36:17.620 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 18:36:17.737 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 18:36:17.825 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 18:36:18.797 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 18:36:18.809 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:36:18.977 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:36:19.019 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:36:19.019 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:36:19.794 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:36:19.828 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:36:19.828 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:36:19.828 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:36:19.832 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:36:21.162 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 18:36:21.268 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 18:36:21.354 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 18:36:22.369 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 18:36:22.394 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 18:36:22.407 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 18:36:22.560 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154430 bytes
+2026-06-08 18:36:22.560 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:36:22.723 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:36:35.645 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 2416 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:36:35.647 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:36:35.647 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:36:36.659 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 18:36:37.262 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.078 seconds (process running for 3.738)
+2026-06-08 18:36:37.889 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 18:36:37.889 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 18:36:39.374 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:36:39.377 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:36:39.380 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:36:39.382 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:36:40.668 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:36:40.707 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:36:40.707 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:36:40.707 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:36:40.712 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:36:42.070 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 18:36:42.182 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 18:36:42.284 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 18:36:43.201 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 18:36:43.215 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:36:43.417 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:36:43.440 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:36:43.440 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:36:44.150 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:36:44.185 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:36:44.185 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:36:44.185 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:36:44.185 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:36:45.573 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 18:36:45.733 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 18:36:45.815 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 18:36:46.837 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 18:36:46.865 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 18:36:46.874 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 18:36:47.028 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154584 bytes
+2026-06-08 18:36:47.028 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:36:47.158 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:36:57.087 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 15516 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:36:57.087 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:36:57.089 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:36:58.111 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 18:36:58.706 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.082 seconds (process running for 3.337)
+2026-06-08 18:36:59.311 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 18:36:59.311 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 18:37:00.809 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:37:00.812 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 18:37:00.815 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:37:00.815 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:37:01.995 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:37:02.035 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:37:02.035 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:37:02.036 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:37:02.039 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:37:03.404 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:37:03.547 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 18:57:08.957 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 15740 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 18:57:09.043 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 18:57:09.044 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 18:57:10.181 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 18:57:10.941 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.509 seconds (process running for 4.739)
+2026-06-08 18:57:11.702 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 18:57:11.702 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 18:57:13.042 [main] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: The requested name is valid, but no data of the requested type was found (parabank.parasoft.com)
+2026-06-08 18:57:13.043 [main] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-08 18:57:13.062 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 18:57:13.063 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 18:57:15.537 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 18:57:15.576 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 18:57:15.577 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 18:57:15.577 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 18:57:15.585 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 18:57:17.333 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 18:57:17.339 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 18:57:17.558 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:25.662 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 14252 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 23:21:25.752 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 23:21:25.754 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 23:21:27.006 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 23:21:27.886 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 3.195 seconds (process running for 6.251)
+2026-06-08 23:21:28.844 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:21:28.844 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:21:31.693 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:21:31.696 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:21:31.825 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:31.826 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:21:36.836 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:21:37.035 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:21:37.036 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:21:37.036 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:21:37.055 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:21:39.487 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 23:21:39.765 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 23:21:39.981 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:21:41.513 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 23:21:41.548 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:21:41.817 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:41.875 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:41.875 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:21:43.262 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:21:43.333 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:21:43.333 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:21:43.333 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:21:43.348 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:21:44.938 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:21:45.161 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:21:45.311 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:21:45.435 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:21:46.744 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:21:46.764 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:21:47.083 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:21:47.083 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:21:47.309 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:47.317 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 1 | Status: Failed
+2026-06-08 23:21:47.337 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:47.338 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:21:48.420 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:21:48.475 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:21:48.475 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:21:48.475 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:21:48.478 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:21:50.100 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:21:50.309 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:21:50.519 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:21:51.716 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:21:51.749 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:21:51.749 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:21:52.067 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:21:52.067 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:21:52.273 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:52.290 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 2 | Status: Failed
+2026-06-08 23:21:52.337 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:52.337 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:21:53.392 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:21:53.437 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:21:53.437 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:21:53.437 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:21:53.446 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:21:54.989 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:21:55.145 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:21:55.325 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:21:56.313 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:21:56.342 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:21:56.345 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:21:56.530 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:21:56.530 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:21:56.754 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:56.802 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:56.803 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:21:57.807 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:21:57.857 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:21:57.859 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:21:57.859 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:21:57.864 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:21:59.354 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:21:59.543 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:21:59.688 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:21:59.689 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:22:00.748 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:22:00.809 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:22:00.809 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:22:00.809 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:22:00.815 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:22:02.569 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 23:22:02.577 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:22:02.759 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:35:35.739 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 7592 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 23:35:35.829 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 23:35:35.830 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 23:35:37.136 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 23:35:38.120 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.988 seconds (process running for 5.542)
+2026-06-08 23:35:39.196 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:35:39.197 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:35:42.059 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:35:42.063 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:35:42.140 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:35:42.140 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:35:44.179 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:35:44.384 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:35:44.384 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:35:44.384 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:35:44.416 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:35:46.342 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 23:35:46.569 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 23:35:46.783 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:35:48.163 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 23:35:48.182 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:35:48.416 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:35:48.507 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:35:48.508 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:35:49.448 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:35:49.514 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:35:49.514 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:35:49.517 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:35:49.517 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:35:50.988 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:35:51.153 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:35:51.384 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:35:52.642 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:35:52.672 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:35:52.700 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:35:52.910 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:35:52.910 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:35:53.114 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:35:53.129 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 1 | Status: Failed
+2026-06-08 23:35:53.147 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:35:53.147 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:35:54.071 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:35:54.123 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:35:54.124 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:35:54.124 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:35:54.127 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:35:55.597 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:35:55.840 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:35:55.963 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:35:57.157 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:35:57.187 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:35:57.187 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:35:57.346 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:35:57.348 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:35:57.531 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:35:57.534 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 2 | Status: Failed
+2026-06-08 23:35:57.548 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:35:57.549 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:35:58.551 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:35:58.598 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:35:58.600 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:35:58.600 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:35:58.602 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:36:00.106 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:36:00.239 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:36:00.456 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:36:01.681 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:36:01.722 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:36:01.722 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:36:01.886 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:36:01.886 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:36:02.079 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:36:02.101 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:36:02.101 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:36:03.112 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:36:03.156 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:36:03.158 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:36:03.158 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:36:03.160 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:36:04.761 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:36:04.993 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:36:05.011 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:36:05.011 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:36:05.952 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:36:06.014 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:36:06.014 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:36:06.014 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:36:06.023 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:36:07.695 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 23:36:07.697 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:36:07.901 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:44:54.430 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 15616 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 23:44:54.498 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 23:44:54.499 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 23:44:55.774 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 23:44:56.616 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.801 seconds (process running for 5.339)
+2026-06-08 23:44:57.543 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:44:57.543 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:44:59.756 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:44:59.760 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:44:59.863 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:44:59.863 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:02.121 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:02.288 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:02.290 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:02.290 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:02.302 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:04.290 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 23:45:04.579 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 23:45:04.804 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:45:05.940 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 23:45:05.956 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:06.161 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:45:06.221 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:45:06.222 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:07.238 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:07.298 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:07.298 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:07.298 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:07.299 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:08.901 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:45:09.041 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:45:09.250 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:45:10.454 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:45:10.515 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:45:10.538 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:45:10.736 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:45:10.736 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:10.941 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:45:10.972 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: null | Attempts: 1 | Status: Failed
+2026-06-08 23:45:11.019 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:45:11.019 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:11.959 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:12.021 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:12.021 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:12.022 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:12.025 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:13.584 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:45:13.783 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:45:13.979 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:45:15.044 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:45:15.075 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:45:15.080 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:45:15.211 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:45:15.211 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:15.406 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:45:15.415 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: null | Attempts: 2 | Status: Failed
+2026-06-08 23:45:15.441 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:45:15.442 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:16.658 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:16.719 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:16.719 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:16.719 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:16.723 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:18.218 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:45:18.348 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:45:18.457 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:45:19.583 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:45:19.644 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:45:19.647 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:45:19.799 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154435 bytes
+2026-06-08 23:45:19.799 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:19.984 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:45:20.022 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:45:20.022 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:21.008 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:21.061 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:21.062 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:21.062 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:21.062 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:22.603 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:22.782 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:45:22.815 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:45:22.816 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:45:23.874 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:45:23.924 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:45:23.924 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:45:23.924 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:45:23.929 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:45:25.721 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 23:45:25.721 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:45:25.911 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:28.191 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 5400 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 23:55:28.279 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 23:55:28.280 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 23:55:29.500 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 23:55:30.352 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.856 seconds (process running for 5.409)
+2026-06-08 23:55:31.261 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:55:31.261 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:55:32.576 [main] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: The requested name is valid, but no data of the requested type was found (parabank.parasoft.com)
+2026-06-08 23:55:32.577 [main] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-08 23:55:32.683 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:32.683 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:35.373 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:35.482 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:35.484 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:35.484 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:35.516 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:55:38.143 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 23:55:38.430 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 23:55:38.639 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:55:39.840 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 23:55:39.864 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:55:40.124 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:40.176 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:55:40.177 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:55:40.201 [main] WARN  c.p.automation.stepdefinitions.Hooks - API authentication failed: parabank.parasoft.com
+2026-06-08 23:55:40.201 [main] WARN  c.p.automation.stepdefinitions.Hooks - Continuing without API authentication
+2026-06-08 23:55:40.203 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:40.203 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:41.206 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:41.262 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:41.264 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:41.264 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:41.273 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:55:42.983 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:55:43.226 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:55:43.423 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:55:44.524 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:55:44.557 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:55:44.574 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:55:44.787 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:55:44.787 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:55:44.971 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:44.996 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 1 | Status: Failed
+2026-06-08 23:55:45.036 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:55:45.036 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:55:46.367 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:55:46.372 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:55:46.375 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:46.375 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:47.240 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:47.298 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:47.298 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:47.298 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:47.303 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:55:48.912 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:55:49.035 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:55:49.243 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:55:50.398 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:55:50.433 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:55:50.438 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:55:50.605 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:55:50.605 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:55:50.813 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:50.820 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 2 | Status: Failed
+2026-06-08 23:55:50.831 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:50.831 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:51.909 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:51.961 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:51.963 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:51.963 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:51.968 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:55:53.514 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:55:53.635 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:55:53.740 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:55:54.936 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:55:54.976 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:55:54.976 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:55:55.163 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 154366 bytes
+2026-06-08 23:55:55.163 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:55:55.359 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:55.426 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:55.427 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:56.432 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:56.495 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:56.495 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:56.495 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:56.500 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:55:58.032 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:55:58.217 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:55:58.271 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:55:58.272 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:55:59.341 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:55:59.396 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:55:59.396 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:55:59.396 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:55:59.402 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:56:00.895 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 23:56:00.895 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:56:01.075 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:58:26.941 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 18108 (E:\MUNTESH\Automation\parabank-test-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-test-framework)
+2026-06-08 23:58:26.943 [main] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-08 23:58:26.943 [main] INFO  c.p.a.r.CucumberSpringConfiguration - The following 1 profile is active: "qa"
+2026-06-08 23:58:28.077 [main] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-08 23:58:28.842 [main] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 2.364 seconds (process running for 4.82)
+2026-06-08 23:58:29.814 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-08 23:58:29.814 [main] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-08 23:58:32.625 [main] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:58:32.629 [main] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><id>12212</id><firstName>John</firstName><lastName>Smith</lastName><address><street>1431 Main St</street><city>Beverly Hills</city><state>CA</state><zipCode>90210</zipCode></address><phoneNumber>310-447-4121</phoneNumber><ssn>622-11-9999</ssn></customer>
+2026-06-08 23:58:32.701 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:58:32.701 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:58:34.471 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:58:34.551 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:58:34.551 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:58:34.551 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:58:34.566 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:58:36.315 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'john'
+2026-06-08 23:58:36.602 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'demo'
+2026-06-08 23:58:36.825 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:58:38.115 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Current URL after login: https://parabank.parasoft.com/parabank/overview.htm
+2026-06-08 23:58:38.135 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:58:38.371 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:58:38.474 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:58:38.474 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:58:39.468 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:58:39.543 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:58:39.543 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:58:39.545 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:58:39.552 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:58:41.132 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:58:41.264 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:58:41.472 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:58:42.718 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:58:42.744 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:58:42.758 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:58:45.951 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 160061 bytes
+2026-06-08 23:58:45.951 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:58:46.180 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:58:46.187 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 1 | Status: Failed
+2026-06-08 23:58:46.201 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:58:46.201 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:58:47.289 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:58:47.338 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:58:47.338 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:58:47.338 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:58:47.341 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:58:48.870 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:58:48.990 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:58:49.090 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:58:50.285 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:58:50.307 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:58:50.311 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:58:53.491 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 162025 bytes
+2026-06-08 23:58:53.491 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:58:53.722 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:58:53.740 [main] INFO  c.p.a.listeners.RetryAnalyzer - Retrying test: runScenario | Attempts: 2 | Status: Failed
+2026-06-08 23:58:53.789 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:58:53.790 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:58:54.811 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:58:54.861 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:58:54.861 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:58:54.861 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:58:54.864 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:58:56.312 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Username field: 'invalidUser'
+2026-06-08 23:58:56.524 [main] DEBUG c.p.automation.ui.pages.LoginPage - Typing into Password field: 'wrongPassword'
+2026-06-08 23:58:56.724 [main] DEBUG c.p.automation.ui.pages.LoginPage - Clicking on: Login button
+2026-06-08 23:58:57.873 [main] INFO  c.p.a.stepdefinitions.LoginSteps - Error message should be displayed
+2026-06-08 23:58:57.907 [main] DEBUG c.p.automation.ui.pages.LoginPage - Element 'Error message' displayed: false
+2026-06-08 23:58:57.908 [main] ERROR c.p.automation.stepdefinitions.Hooks - Scenario failed: Login with invalid credentials shows error
+2026-06-08 23:59:01.101 [main] INFO  c.p.automation.stepdefinitions.Hooks - Screenshot captured and attached. Size: 162025 bytes
+2026-06-08 23:59:01.101 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:59:01.329 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:59:01.371 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:59:01.371 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:59:02.571 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:59:02.625 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:59:02.627 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:59:02.627 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:59:02.628 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:59:04.205 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:59:04.410 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
+2026-06-08 23:59:04.437 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up WebDriver ===
+2026-06-08 23:59:04.438 [main] INFO  c.p.a.core.driver.DriverFactory - Creating WebDriver: browser=chrome, headless=false
+2026-06-08 23:59:05.456 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 148, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 148
+2026-06-08 23:59:05.508 [main] INFO  c.p.a.core.driver.DriverFactory - WebDriver created successfully
+2026-06-08 23:59:05.508 [main] DEBUG c.p.a.core.driver.DriverManager - Driver initialized for thread: main
+2026-06-08 23:59:05.508 [main] INFO  c.p.automation.stepdefinitions.Hooks - WebDriver initialized for UI test
+2026-06-08 23:59:05.513 [main] INFO  c.p.automation.ui.pages.LoginPage - Navigating to: https://parabank.parasoft.com
+2026-06-08 23:59:06.985 [main] INFO  c.p.a.s.ScreenshotSteps - This test is designed to fail — verifying screenshot capture
+2026-06-08 23:59:06.987 [main] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
+2026-06-08 23:59:07.187 [main] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: main
