@@ -539,3 +539,31 @@
 2026-06-10 18:37:59.639 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Quitting WebDriver ===
 2026-06-10 18:37:59.962 [TestNG-tests-1] DEBUG c.p.a.core.driver.DriverManager - Driver quit successfully for thread: TestNG-tests-1
 2026-06-10 18:37:59.977 [TestNG-tests-1] INFO  c.p.a.listeners.RetryAnalyzer - Skipping retry for assertion error: runScenario
+2026-06-10 19:13:44.444 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Starting CucumberSpringConfiguration using Java 21.0.11 with PID 9960 (E:\MUNTESH\Automation\parabank-automation-framework\target\test-classes started by mukesh in E:\MUNTESH\Automation\parabank-automation-framework)
+2026-06-10 19:13:44.459 [TestNG-tests-1] DEBUG c.p.a.r.CucumberSpringConfiguration - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-10 19:13:44.461 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - The following 2 profiles are active: "qa", "test"
+2026-06-10 19:13:47.799 [TestNG-tests-1] INFO  c.p.a.config.RestAssuredConfig - RestAssured base URL configured: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 19:13:47.803 [TestNG-tests-1] INFO  c.p.a.config.RestAssuredConfig - Configuring RestAssured with base URL: https://parabank.parasoft.com/parabank/services/bank
+2026-06-10 19:13:48.704 [TestNG-tests-1] INFO  c.p.a.r.CucumberSpringConfiguration - Started CucumberSpringConfiguration in 4.77 seconds (process running for 7.55)
+2026-06-10 19:13:49.968 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 19:13:49.968 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - === Setting up API authentication ===
+2026-06-10 19:13:49.968 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 19:13:49.968 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 19:13:52.887 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 19:13:52.888 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 19:13:52.892 [TestNG-tests-2] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 19:13:52.892 [TestNG-tests-1] INFO  c.p.automation.stepdefinitions.Hooks - API authenticated. Customer ID: 12212
+2026-06-10 19:13:53.040 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 19:13:53.040 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Logging in via API with username: john
+2026-06-10 19:13:53.546 [TestNG-tests-1] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 19:13:53.547 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 19:13:53.548 [TestNG-tests-2] INFO  c.p.automation.api.AuthApiClient - Login successful. Customer ID: 12212
+2026-06-10 19:13:53.550 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - API authenticated. Customer ID: 12212
+2026-06-10 19:13:53.583 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 19:13:53.583 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Fetching accounts for customer ID: 12212
+2026-06-10 19:13:54.065 [TestNG-tests-1] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 19:13:54.066 [TestNG-tests-2] INFO  c.p.automation.api.AccountApiClient - Accounts response status: 200
+2026-06-10 19:13:54.067 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 19:13:54.067 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account API response status: 200
+2026-06-10 19:13:54.092 [TestNG-tests-2] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
+2026-06-10 19:13:54.092 [TestNG-tests-1] INFO  c.p.a.s.AccountApiSteps - Account information verified in response
