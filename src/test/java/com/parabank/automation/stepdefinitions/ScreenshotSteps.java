@@ -22,6 +22,7 @@ public class ScreenshotSteps {
     public void openApp() {
         loginPage.open(props.getUi()
                             .getUrl());
+        log.info("Logged in.............");
     }
 
     @Then("I force a test failure to capture screenshot")

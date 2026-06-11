@@ -35,3 +35,6 @@ allure-report/
 
 ### VS Code ###
 .vscode/
+
+### Logs ###
+logs/
