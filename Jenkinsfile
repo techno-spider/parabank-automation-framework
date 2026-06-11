@@ -44,7 +44,6 @@ pipeline {
         stage('Generate Allure Report') {
             steps {
                 script {
-                    // Copy history from previous build
                     copyArtifacts(
                         projectName: env.JOB_NAME,
                         selector: specific("${env.BUILD_NUMBER.toInteger() - 1}"),
@@ -52,18 +51,6 @@ pipeline {
                         optional: true,
                         target: 'allure-results'
                     )
-
-                    // Generate report
-                    bat 'allure generate target/allure-results -o target/allure-report --clean'
-                }
-            }
-            post {
-                always {
-                    publishHTML([
-                        reportDir: 'target/allure-report',
-                        reportFiles: 'index.html',
-                        reportName: 'Allure Report'
-                    ])
                 }
             }
         }
