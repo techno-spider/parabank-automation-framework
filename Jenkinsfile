@@ -24,17 +24,17 @@ pipeline {
 
                     switch(params.TEST_TYPE) {
                         case 'all':
-                            sh mvnCommand
+                            bat mvnCommand
                             break
                         case 'smoke':
                         case 'regression':
-                            sh "${mvnCommand} -Dcucumber.filter.tags=@${params.TEST_TYPE}"
+                            bat "${mvnCommand} -Dcucumber.filter.tags=@${params.TEST_TYPE}"
                             break
                         case 'api':
-                            sh "${mvnCommand} -DsuiteXmlFile=src/test/resources/parallel-testng.xml"
+                            bat "${mvnCommand} -Dcucumber.filter.tags=@api"
                             break
                         case 'ui':
-                            sh "${mvnCommand} -DsuiteXmlFile=src/test/resources/parallel-testng.xml"
+                            bat "${mvnCommand} -Dcucumber.filter.tags=@ui"
                             break
                     }
                 }
@@ -54,8 +54,16 @@ pipeline {
                     )
 
                     // Generate report
-                    allure includeProperties: false,
-                            results: [[path: 'target/allure-results']]
+                    bat 'allure generate target/allure-results -o target/allure-report --clean'
+                }
+            }
+            post {
+                always {
+                    publishHTML([
+                        reportDir: 'target/allure-report',
+                        reportFiles: 'index.html',
+                        reportName: 'Allure Report'
+                    ])
                 }
             }
         }
