@@ -27,8 +27,10 @@ pipeline {
                             bat mvnCommand
                             break
                         case 'smoke':
+                            bat "${mvnCommand} -Dcucumber.filter.tags=@smoke"
+                            break
                         case 'regression':
-                            bat "${mvnCommand} -Dcucumber.filter.tags=@${params.TEST_TYPE}"
+                            bat "${mvnCommand} -Dcucumber.filter.tags=@regression"
                             break
                         case 'api':
                             bat "${mvnCommand} -Dcucumber.filter.tags=@api"
@@ -44,6 +46,8 @@ pipeline {
         stage('Generate Allure Report') {
             steps {
                 script {
+                    bat 'allure generate target/allure-results -o target/allure-report --clean'
+
                     copyArtifacts(
                         projectName: env.JOB_NAME,
                         selector: specific("${env.BUILD_NUMBER.toInteger() - 1}"),
@@ -59,7 +63,7 @@ pipeline {
 
     post {
         always {
-            cleanWs()
+            echo 'Pipeline completed!'
         }
         success {
             echo 'Tests passed successfully!'
