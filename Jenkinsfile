@@ -27,10 +27,8 @@ pipeline {
                             bat mvnCommand
                             break
                         case 'smoke':
-                            bat "${mvnCommand} -Dcucumber.filter.tags=@smoke"
-                            break
                         case 'regression':
-                            bat "${mvnCommand} -Dcucumber.filter.tags=@regression"
+                            bat "${mvnCommand} -Dtest=TestRunner -Dcucumber.filter.tags=@${params.TEST_TYPE}"
                             break
                         case 'api':
                             bat "${mvnCommand} -Dcucumber.filter.tags=@api"

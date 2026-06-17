@@ -50,7 +50,9 @@ public class AccountApiClient {
      */
     public double getBalance(String accountId) {
         Response response = getAccountById(accountId);
-        return response.jsonPath()
-                       .getDouble("balance");
+        /*return response.jsonPath()
+                       .getDouble("balance");*/
+        return Double.parseDouble(response.xmlPath()
+                                          .getString("account.balance"));
     }
 }

@@ -67,7 +67,7 @@ public abstract class BasePage {
         return getDriver().getCurrentUrl();
     }
 
-    protected String getPageTitle() {
+    public String getPageTitle() {
         return getDriver().getTitle();
     }
 }
